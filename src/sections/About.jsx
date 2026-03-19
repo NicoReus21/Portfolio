@@ -1,4 +1,4 @@
-import { personal, education, languages } from '../data/portfolio'
+import { personal, education, languages } from '../data/Portfolio'
 import styles from './About.module.css'
 
 export default function About() {

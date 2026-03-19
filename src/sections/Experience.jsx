@@ -1,4 +1,4 @@
-import { experience } from '../data/portfolio'
+import { experience } from '../data/Portfolio'
 import styles from './Experience.module.css'
 
 function renderBullet(text) {
