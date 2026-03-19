@@ -1,5 +1,6 @@
-import { experience } from '../data/Portfolio'
+import { experience } from '../data/portfolio'
 import styles from './Experience.module.css'
+import shared from '../styles/shared.module.css'
 
 function renderBullet(text) {
   return <span dangerouslySetInnerHTML={{ __html: text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') }} />
@@ -8,10 +9,9 @@ function renderBullet(text) {
 export default function Experience() {
   return (
     <section className="section" id="experience">
-      <div className="section-label">// Trayectoria</div>
-      <h2 className="section-title">Experiencia Profesional</h2>
-      <div className="title-accent" />
-
+      <div className={shared.sectionLabel}>// Trayectoria</div>
+      <h2 className={shared.sectionTitle}>Experiencia Profesional</h2>
+      <div className={shared.titleAccent} />
       <div className={styles.grid}>
         {experience.map((exp) => (
           <div className={styles.card} key={exp.id}>

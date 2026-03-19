@@ -33,7 +33,6 @@ body {
   overflow-x: hidden;
 }
 
-/* Shared section styles */
 .section { padding: 6rem 8%; }
 .section--alt { background: #f5ede0; }
 
@@ -61,7 +60,6 @@ body {
   margin-bottom: 3rem;
 }
 
-/* Buttons */
 .btn-warm {
   display: inline-block;
   background: #9e5e18;
@@ -101,7 +99,6 @@ body {
   transform: translateY(-2px);
 }
 
-/* Animations */
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(22px); }
   to   { opacity: 1; transform: translateY(0); }
@@ -119,4 +116,35 @@ body {
 
 @media (max-width: 900px) {
   .section { padding: 4rem 5%; }
+}
+
+:global(.section-label),
+.section-label {
+  font-family: 'JetBrains Mono', monospace !important;
+  font-size: 0.72rem !important;
+  color: #9e5e18 !important;
+  letter-spacing: 0.15em !important;
+  text-transform: uppercase !important;
+  margin-bottom: 0.5rem !important;
+  display: block !important;
+}
+
+:global(.section-title),
+.section-title {
+  font-family: 'Cormorant Garamond', serif !important;
+  font-size: clamp(2rem, 3.5vw, 3rem) !important;
+  font-weight: 700 !important;
+  color: #2e1a08 !important;
+  margin-bottom: 0.6rem !important;
+  display: block !important;
+}
+
+:global(.title-accent),
+.title-accent {
+  width: 44px !important;
+  height: 3px !important;
+  background: linear-gradient(90deg, #9e5e18, #d4893a) !important;
+  border-radius: 2px !important;
+  margin-bottom: 3rem !important;
+  display: block !important;
 }

@@ -1,12 +1,13 @@
-import { personal, education, languages } from '../data/Portfolio'
+import { personal, education, languages } from '../data/portfolio'
 import styles from './About.module.css'
+import shared from '../styles/shared.module.css'
 
 export default function About() {
   return (
     <section className={`section section--alt ${styles.about}`} id="about">
-      <div className="section-label">// Sobre mí</div>
-      <h2 className="section-title">Quién soy</h2>
-      <div className="title-accent" />
+      <div className={shared.sectionLabel}>// Sobre mí</div>
+      <h2 className={shared.sectionTitle}>Quién soy</h2>
+      <div className={shared.titleAccent} />
 
       <div className={styles.grid}>
         <div className={styles.text}>
@@ -34,7 +35,6 @@ export default function About() {
             <div className={styles.eduSchool}>{education.school}</div>
             <div className={styles.eduPeriod}>{education.period} · {education.location}</div>
           </div>
-
           <div className={styles.asideCard}>
             <h4>Idiomas</h4>
             {languages.map(({ name, level, percent }) => (

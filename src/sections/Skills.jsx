@@ -1,13 +1,13 @@
-import { skills } from '../data/Portfolio'
+import { skills } from '../data/portfolio'
 import styles from './Skills.module.css'
+import shared from '../styles/shared.module.css'
 
 export default function Skills() {
   return (
     <section className="section" id="skills">
-      <div className="section-label">// Stack tecnológico</div>
-      <h2 className="section-title">Habilidades</h2>
-      <div className="title-accent" />
-
+      <div className={shared.sectionLabel}>// Stack tecnológico</div>
+      <h2 className={shared.sectionTitle}>Habilidades</h2>
+      <div className={shared.titleAccent} />
       <div className={styles.grid}>
         {skills.map(({ icon, title, items }) => (
           <div className={styles.card} key={title}>
@@ -17,12 +17,7 @@ export default function Skills() {
             </div>
             <div className={styles.pills}>
               {items.map(({ name, hot }) => (
-                <span
-                  className={`${styles.pill} ${hot ? styles.hot : ''}`}
-                  key={name}
-                >
-                  {name}
-                </span>
+                <span className={`${styles.pill} ${hot ? styles.hot : ''}`} key={name}>{name}</span>
               ))}
             </div>
           </div>
