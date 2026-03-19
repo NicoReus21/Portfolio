@@ -1,102 +1,84 @@
-.grid {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
+.grid { display: flex; flex-direction: column; gap: 1.5rem; }
 
 .card {
-  background: var(--white);
-  border: 1px solid var(--border);
+  background: #ffffff;
+  border: 1px solid #c8ad90;
   border-radius: 12px;
   padding: 2rem 2.5rem;
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 2rem;
   align-items: start;
-  box-shadow: var(--shadow);
+  box-shadow: 0 4px 24px rgba(60,30,5,0.08);
   transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
 }
 .card:hover {
-  border-color: var(--amber2);
-  box-shadow: var(--shadow2);
+  border-color: #9e5e18;
+  box-shadow: 0 12px 48px rgba(60,30,5,0.14);
   transform: translateY(-2px);
 }
 
 .iconWrap {
   width: 52px; height: 52px;
-  background: var(--cream2);
-  border: 1px solid var(--border);
+  background: #f5ede0;
+  border: 1px solid #c8ad90;
   border-radius: 12px;
   display: flex; align-items: center; justify-content: center;
   font-size: 1.4rem; flex-shrink: 0;
 }
 
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-bottom: 0.3rem;
+  display: flex; justify-content: space-between;
+  align-items: flex-start; flex-wrap: wrap;
+  gap: 0.5rem; margin-bottom: 0.3rem;
 }
 
 .role {
   font-family: 'Cormorant Garamond', serif;
   font-size: 1.25rem; font-weight: 700;
-  color: var(--brown);
+  color: #2e1a08;
 }
 
 .period {
   font-family: 'JetBrains Mono', monospace;
   font-size: 0.72rem;
-  color: var(--amber);
-  background: rgba(184,115,42,0.1);
-  border: 1px solid rgba(184,115,42,0.2);
+  color: #9e5e18;
+  background: rgba(158,94,24,0.1);
+  border: 1px solid rgba(158,94,24,0.25);
   padding: 0.25rem 0.7rem;
   border-radius: 4px;
   white-space: nowrap;
-}
-
-.company {
-  color: var(--amber2);
   font-weight: 500;
-  font-size: 0.88rem;
-  margin-bottom: 1rem;
 }
 
-.bullets {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 0.4rem;
-}
+.company { color: #9e5e18; font-weight: 600; font-size: 0.9rem; margin-bottom: 1rem; }
+
+.bullets { list-style: none; display: flex; flex-direction: column; gap: 0.4rem; }
 .bullets li {
-  font-size: 0.9rem;
-  color: var(--text2);
+  font-size: 0.92rem;
+  color: #3d2810;
   padding-left: 1.2rem;
   position: relative;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.6;
 }
 .bullets li::before {
   content: '→';
   position: absolute; left: 0;
-  color: var(--amber3); font-size: 0.8rem; top: 0.1rem;
+  color: #b87228; font-size: 0.8rem; top: 0.1rem;
 }
-.bullets li :global(strong) { color: var(--brown); font-weight: 600; }
+.bullets li :global(strong) { color: #2e1a08; font-weight: 700; }
 
-.tags {
-  display: flex; flex-wrap: wrap; gap: 0.4rem;
-  margin-top: 1rem;
-}
+.tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 1rem; }
 .tag {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 0.7rem;
-  color: var(--text3);
-  background: var(--cream2);
-  border: 1px solid var(--border);
-  padding: 0.18rem 0.6rem;
+  font-size: 0.72rem;
+  color: #4a2e10;
+  background: #f5ede0;
+  border: 1px solid #c8ad90;
+  padding: 0.2rem 0.6rem;
   border-radius: 4px;
+  font-weight: 500;
 }
 
 @media (max-width: 700px) {

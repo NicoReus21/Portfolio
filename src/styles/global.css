@@ -1,32 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Outfit:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
 
 :root {
-  --cream:   #faf6f0;
-  --cream2:  #f3ece0;
-  --cream3:  #ede3d2;
-  --amber:   #b8732a;
-  --amber2:  #d4893a;
-  --amber3:  #e8a84a;
-  --brown:   #5c3d1e;
-  --brown2:  #7a5230;
-  --brown3:  #3a2510;
-  --text:    #2a1f14;
-  --text2:   #5a4535;
-  --text3:   #8a7060;
+  --cream:   #fdf8f2;
+  --cream2:  #f5ede0;
+  --cream3:  #ecddd0;
+  --amber:   #9e5e18;
+  --amber2:  #b87228;
+  --amber3:  #d4893a;
+  --brown:   #2e1a08;
+  --brown2:  #4a2e10;
+  --brown3:  #1c0f04;
+  --text:    #1e1208;
+  --text2:   #3d2810;
+  --text3:   #5e3e20;
   --white:   #ffffff;
-  --border:  #d5c4ae;
-  --border2: #c4b09a;
+  --border:  #c8ad90;
+  --border2: #a88860;
   --radius:  8px;
-  --shadow:  0 4px 24px rgba(90,60,20,0.10);
-  --shadow2: 0 12px 48px rgba(90,60,20,0.16);
+  --shadow:  0 4px 24px rgba(60,30,5,0.12);
+  --shadow2: 0 12px 48px rgba(60,30,5,0.18);
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; background: #faf6f0; }
+html { scroll-behavior: smooth; background: #fdf8f2; }
 
 body {
-  background-color: #faf6f0 !important;
-  color: #2a1f14;
+  background-color: #fdf8f2 !important;
+  color: #1e1208;
   font-family: 'Outfit', sans-serif;
   font-size: 16px;
   line-height: 1.7;
@@ -35,12 +35,12 @@ body {
 
 /* Shared section styles */
 .section { padding: 6rem 8%; }
-.section--alt { background: var(--cream2); }
+.section--alt { background: #f5ede0; }
 
 .section-label {
   font-family: 'JetBrains Mono', monospace;
   font-size: 0.72rem;
-  color: var(--amber);
+  color: #9e5e18;
   letter-spacing: 0.15em;
   text-transform: uppercase;
   margin-bottom: 0.5rem;
@@ -50,13 +50,13 @@ body {
   font-family: 'Cormorant Garamond', serif;
   font-size: clamp(2rem, 3.5vw, 3rem);
   font-weight: 700;
-  color: var(--brown);
+  color: #2e1a08;
   margin-bottom: 0.6rem;
 }
 
 .title-accent {
   width: 44px; height: 3px;
-  background: linear-gradient(90deg, var(--amber), var(--amber3));
+  background: linear-gradient(90deg, #9e5e18, #d4893a);
   border-radius: 2px;
   margin-bottom: 3rem;
 }
@@ -64,31 +64,31 @@ body {
 /* Buttons */
 .btn-warm {
   display: inline-block;
-  background: var(--amber);
-  color: white;
+  background: #9e5e18;
+  color: #ffffff !important;
   padding: 0.85rem 2rem;
-  border-radius: var(--radius);
+  border-radius: 8px;
   text-decoration: none;
   font-weight: 600;
   font-size: 0.9rem;
   border: none;
   cursor: pointer;
   transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
-  box-shadow: 0 4px 16px rgba(184,115,42,0.3);
+  box-shadow: 0 4px 16px rgba(158,94,24,0.35);
 }
 .btn-warm:hover {
-  background: var(--amber2);
+  background: #b87228;
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(184,115,42,0.35);
+  box-shadow: 0 8px 24px rgba(158,94,24,0.4);
 }
 
 .btn-ghost {
   display: inline-block;
   background: transparent;
-  color: var(--brown);
-  border: 1.5px solid var(--border2);
+  color: #2e1a08 !important;
+  border: 1.5px solid #a88860;
   padding: 0.85rem 2rem;
-  border-radius: var(--radius);
+  border-radius: 8px;
   text-decoration: none;
   font-weight: 500;
   font-size: 0.9rem;
@@ -96,12 +96,12 @@ body {
   transition: border-color 0.2s, color 0.2s, transform 0.15s;
 }
 .btn-ghost:hover {
-  border-color: var(--amber);
-  color: var(--amber);
+  border-color: #9e5e18;
+  color: #9e5e18 !important;
   transform: translateY(-2px);
 }
 
-/* Fade-up animation */
+/* Animations */
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(22px); }
   to   { opacity: 1; transform: translateY(0); }
@@ -117,7 +117,6 @@ body {
   50%       { opacity: 0.5; transform: scale(0.85); }
 }
 
-/* Responsive base */
 @media (max-width: 900px) {
   .section { padding: 4rem 5%; }
 }

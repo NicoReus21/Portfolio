@@ -8,51 +8,59 @@
 }
 
 .text p {
-  color: var(--text2);
+  color: #3d2810;
   margin-bottom: 1.2rem;
   line-height: 1.85;
-  font-weight: 300;
+  font-weight: 400;
 }
-.text p :global(strong) { color: var(--brown); font-weight: 600; }
+.text p :global(strong) { color: #2e1a08; font-weight: 700; }
 
 .badges { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1.5rem; }
 .badge {
   display: flex; align-items: center; gap: 0.5rem;
-  background: var(--white); border: 1px solid var(--border);
-  padding: 0.5rem 1rem; border-radius: var(--radius);
-  font-size: 0.85rem; color: var(--text2); font-weight: 500;
+  background: #ffffff;
+  border: 1px solid #c8ad90;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  color: #2e1a08;
+  font-weight: 500;
 }
 
 .asideCard {
-  background: var(--white);
-  border: 1px solid var(--border);
+  background: #ffffff;
+  border: 1px solid #c8ad90;
   border-radius: 12px;
   padding: 1.8rem;
   margin-bottom: 1.2rem;
-  box-shadow: var(--shadow);
+  box-shadow: 0 4px 24px rgba(60,30,5,0.10);
 }
 .asideCard h4 {
   font-family: 'Cormorant Garamond', serif;
   font-size: 1rem; font-weight: 700;
-  color: var(--brown); margin-bottom: 1rem;
+  color: #2e1a08;
+  margin-bottom: 1rem;
   text-transform: uppercase; letter-spacing: 0.05em;
 }
 
-.eduDegree { font-weight: 600; color: var(--text); font-size: 0.9rem; }
-.eduSchool { color: var(--amber2); font-size: 0.85rem; }
-.eduPeriod { color: var(--text3); font-size: 0.8rem; font-family: 'JetBrains Mono', monospace; margin-top: 0.2rem; }
+.eduDegree { font-weight: 700; color: #1e1208; font-size: 0.9rem; }
+.eduSchool { color: #9e5e18; font-size: 0.85rem; font-weight: 500; }
+.eduPeriod { color: #5e3e20; font-size: 0.8rem; font-family: 'JetBrains Mono', monospace; margin-top: 0.2rem; }
 
 .langItem { margin-bottom: 1rem; }
 .langRow { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.3rem; }
-.langName { font-size: 0.9rem; font-weight: 500; }
+.langName { font-size: 0.9rem; font-weight: 600; color: #1e1208; }
 .langLevel {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 0.75rem; color: var(--amber);
-  background: rgba(184,115,42,0.1);
-  padding: 0.2rem 0.6rem; border-radius: 4px;
+  font-size: 0.75rem;
+  color: #9e5e18;
+  background: rgba(158,94,24,0.1);
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  font-weight: 500;
 }
-.langBar { height: 4px; background: var(--cream3); border-radius: 2px; }
-.langFill { height: 100%; background: linear-gradient(90deg, var(--amber), var(--amber3)); border-radius: 2px; transition: width 1s ease; }
+.langBar { height: 5px; background: #ecddd0; border-radius: 2px; }
+.langFill { height: 100%; background: linear-gradient(90deg, #9e5e18, #d4893a); border-radius: 2px; }
 
 @media (max-width: 900px) {
   .grid { grid-template-columns: 1fr; gap: 2.5rem; }
