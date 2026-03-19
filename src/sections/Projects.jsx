@@ -4,7 +4,7 @@ import styles from './Projects.module.css'
 export default function Projects() {
   return (
     <section className="section section--alt" id="projects">
-      <div className={styles.sectionLabel}>// Portafolio</div>
+      <div className={styles.sectionLabel}>Portafolio</div>
       <h2 className={styles.sectionTitle}>Proyectos</h2>
       <div className={styles.titleAccent} />
       <div className={styles.grid}>

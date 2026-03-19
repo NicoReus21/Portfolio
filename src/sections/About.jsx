@@ -4,7 +4,7 @@ import styles from './About.module.css'
 export default function About() {
   return (
     <section className={`section section--alt`} id="about">
-      <div className={styles.sectionLabel}>// Sobre mí</div>
+      <div className={styles.sectionLabel}>Sobre mí</div>
       <h2 className={styles.sectionTitle}>Quién soy</h2>
       <div className={styles.titleAccent} />
       <div className={styles.grid}>

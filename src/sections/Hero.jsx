@@ -1,4 +1,4 @@
-import { personal } from '../data/Portfolio'
+import { personal } from '@/data/portfolio'
 import styles from './Hero.module.css'
 
 export default function Hero() {
@@ -45,7 +45,6 @@ export default function Hero() {
             <span className={styles.dot} />
             Disponible para oportunidades
           </div>
-          <div className={styles.avatar}>NC</div>
           <div className={styles.cardName}>{personal.fullName}</div>
           <div className={styles.cardRole}>Ing. Computación e Informática · UCN</div>
           <hr className={styles.divider} />

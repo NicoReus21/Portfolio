@@ -8,7 +8,7 @@ function renderBullet(text) {
 export default function Experience() {
   return (
     <section className="section" id="experience">
-      <div className={styles.sectionLabel}>// Trayectoria</div>
+      <div className={styles.sectionLabel}>Trayectoria</div>
       <h2 className={styles.sectionTitle}>Experiencia Profesional</h2>
       <div className={styles.titleAccent} />
       <div className={styles.grid}>
