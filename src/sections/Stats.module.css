@@ -1,0 +1,24 @@
+.stats { background: var(--brown); padding: 3rem 8%; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  text-align: center;
+}
+
+.number {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 3rem; font-weight: 700;
+  color: var(--amber3); line-height: 1;
+}
+
+.label {
+  color: rgba(250,246,240,0.6);
+  font-size: 0.85rem; margin-top: 0.3rem;
+}
+
+@media (max-width: 700px) {
+  .grid { grid-template-columns: repeat(2, 1fr); }
+  .stats { padding: 2.5rem 5%; }
+}

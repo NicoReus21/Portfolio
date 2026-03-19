@@ -1,0 +1,92 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow2);
+  border-color: var(--amber2);
+}
+
+.banner {
+  height: 10px;
+  background: linear-gradient(90deg, var(--amber), var(--amber3));
+  flex-shrink: 0;
+}
+
+.body {
+  padding: 2rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.iconWrap {
+  width: 48px; height: 48px;
+  background: var(--cream2);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.4rem;
+}
+
+.links { display: flex; gap: 0.5rem; }
+
+.link {
+  color: var(--text3);
+  text-decoration: none;
+  font-size: 0.75rem;
+  font-family: 'JetBrains Mono', monospace;
+  border: 1px solid var(--border);
+  padding: 0.25rem 0.7rem;
+  border-radius: var(--radius);
+  transition: color 0.2s, border-color 0.2s;
+}
+.link:hover { color: var(--amber); border-color: var(--amber); }
+.private { opacity: 0.4; cursor: default; }
+.private:hover { color: var(--text3); border-color: var(--border); }
+
+.name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.3rem; font-weight: 700;
+  color: var(--brown); margin-bottom: 0.5rem;
+}
+
+.desc {
+  color: var(--text2);
+  font-size: 0.88rem;
+  flex: 1;
+  margin-bottom: 1.2rem;
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+.tags { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  color: var(--amber2);
+  background: rgba(184,115,42,0.08);
+  border: 1px solid rgba(184,115,42,0.2);
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+}

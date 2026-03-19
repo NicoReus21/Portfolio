@@ -1,0 +1,105 @@
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 2rem 2.5rem;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 2rem;
+  align-items: start;
+  box-shadow: var(--shadow);
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+}
+.card:hover {
+  border-color: var(--amber2);
+  box-shadow: var(--shadow2);
+  transform: translateY(-2px);
+}
+
+.iconWrap {
+  width: 52px; height: 52px;
+  background: var(--cream2);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.4rem; flex-shrink: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.3rem;
+}
+
+.role {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.25rem; font-weight: 700;
+  color: var(--brown);
+}
+
+.period {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  color: var(--amber);
+  background: rgba(184,115,42,0.1);
+  border: 1px solid rgba(184,115,42,0.2);
+  padding: 0.25rem 0.7rem;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.company {
+  color: var(--amber2);
+  font-weight: 500;
+  font-size: 0.88rem;
+  margin-bottom: 1rem;
+}
+
+.bullets {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.bullets li {
+  font-size: 0.9rem;
+  color: var(--text2);
+  padding-left: 1.2rem;
+  position: relative;
+  font-weight: 300;
+  line-height: 1.6;
+}
+.bullets li::before {
+  content: '→';
+  position: absolute; left: 0;
+  color: var(--amber3); font-size: 0.8rem; top: 0.1rem;
+}
+.bullets li :global(strong) { color: var(--brown); font-weight: 600; }
+
+.tags {
+  display: flex; flex-wrap: wrap; gap: 0.4rem;
+  margin-top: 1rem;
+}
+.tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  color: var(--text3);
+  background: var(--cream2);
+  border: 1px solid var(--border);
+  padding: 0.18rem 0.6rem;
+  border-radius: 4px;
+}
+
+@media (max-width: 700px) {
+  .card { grid-template-columns: 1fr; gap: 1rem; padding: 1.5rem; }
+  .iconWrap { display: none; }
+}
