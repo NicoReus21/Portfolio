@@ -1,4 +1,4 @@
-import { personal } from '../data/Portfolio'
+import { personal } from '@/data/portfolio'
 import styles from './Hero.module.css'
 
 export default function Hero() {
