@@ -1,6 +1,5 @@
 import { personal } from '../data/portfolio'
 import styles from './Contact.module.css'
-import shared from '../styles/shared.module.css'
 
 const cards = [
   { icon: '✉️', label: 'Email', value: 'nicolas.ahumada0605@gmail.com', href: `mailto:${personal.email}` },
@@ -11,9 +10,9 @@ const cards = [
 export default function Contact() {
   return (
     <section className={styles.contact} id="contact">
-      <div className={shared.sectionLabel}>// Contacto</div>
-      <h2 className={`${shared.sectionTitle} ${styles.title}`}>Trabajemos juntos</h2>
-      <div className={`${shared.titleAccent} ${styles.accent}`} />
+      <div className={styles.sectionLabel}>// Contacto</div>
+      <h2 className={styles.sectionTitle}>Trabajemos juntos</h2>
+      <div className={styles.titleAccent} />
       <p className={styles.desc}>
         Estoy disponible para nuevas oportunidades laborales, proyectos freelance
         o simplemente conversar sobre tecnología. No dudes en escribirme.

@@ -25,3 +25,35 @@
 .ghostLight:hover { border-color: #e8a84a !important; color: #e8a84a !important; }
 
 @media (max-width: 700px) { .contact { padding: 4rem 5%; } .cards { flex-direction: column; align-items: stretch; } .card { min-width: unset; } }
+
+
+/* Section headers */
+.sectionLabel {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.72rem;
+  color: #9e5e18;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+.sectionTitle {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  font-weight: 700;
+  color: #2e1a08;
+  margin-bottom: 0.6rem;
+  display: block;
+}
+.titleAccent {
+  width: 44px;
+  height: 3px;
+  background: linear-gradient(90deg, #9e5e18, #d4893a);
+  border-radius: 2px;
+  margin-bottom: 3rem;
+  display: block;
+}
+
+/* Override for dark background */
+.contact .sectionLabel { color: #e8a84a; }
+.contact .sectionTitle { color: #fdf8f2; }

@@ -1,14 +1,12 @@
 import { personal, education, languages } from '../data/portfolio'
 import styles from './About.module.css'
-import shared from '../styles/shared.module.css'
 
 export default function About() {
   return (
-    <section className={`section section--alt ${styles.about}`} id="about">
-      <div className={shared.sectionLabel}>// Sobre mí</div>
-      <h2 className={shared.sectionTitle}>Quién soy</h2>
-      <div className={shared.titleAccent} />
-
+    <section className={`section section--alt`} id="about">
+      <div className={styles.sectionLabel}>// Sobre mí</div>
+      <h2 className={styles.sectionTitle}>Quién soy</h2>
+      <div className={styles.titleAccent} />
       <div className={styles.grid}>
         <div className={styles.text}>
           {personal.bio.map((p, i) => (
@@ -21,14 +19,11 @@ export default function About() {
               { icon: '🌐', label: 'Inglés C1 EF SET' },
               { icon: '💼', label: 'Disponible' },
             ].map(({ icon, label }) => (
-              <div className={styles.badge} key={label}>
-                <span>{icon}</span> {label}
-              </div>
+              <div className={styles.badge} key={label}><span>{icon}</span> {label}</div>
             ))}
           </div>
         </div>
-
-        <div className={styles.aside}>
+        <div>
           <div className={styles.asideCard}>
             <h4>Educación</h4>
             <div className={styles.eduDegree}>{education.degree}</div>
