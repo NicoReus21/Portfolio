@@ -22,11 +22,11 @@
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; background: #faf6f0; }
 
 body {
-  background: var(--cream);
-  color: var(--text);
+  background-color: #faf6f0 !important;
+  color: #2a1f14;
   font-family: 'Outfit', sans-serif;
   font-size: 16px;
   line-height: 1.7;
