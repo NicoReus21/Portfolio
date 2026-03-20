@@ -16,7 +16,7 @@ export default function Projects() {
                 <div className={styles.iconWrap}>{project.icon}</div>
                 <div className={styles.links}>
                   {project.github
-                    ? <a href={project.github} target="_blank" rel="noreferrer" className={styles.link}>GitHub ↗</a>
+                    ? <a href={project.github} target="_blank" rel="noreferrer" className={styles.link}>Link ↗</a>
                     : <span className={`${styles.link} ${styles.private}`}>Privado</span>}
                   {project.demo && <a href={project.demo} target="_blank" rel="noreferrer" className={styles.link}>Demo ↗</a>}
                 </div>
