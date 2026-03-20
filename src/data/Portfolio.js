@@ -109,8 +109,8 @@ export const projects = [
   {
     id: 3,
     icon: '⚡',
-    name: 'Automatización Microsoft 365',
-    description: 'Automatización de procesos críticos de negocio para Prime Integral SPA. Reducción de tiempos de respuesta mediante flujos en Power Automate y apps en PowerApps.',
+    name: 'ERP Sistema de Gestión Prime Integral',
+    description: 'Automatización de procesos críticos de negocio para Prime Integral SPA. Reducción de tiempos de respuesta mediante flujos en Power Automate y creación de módulos (Asistencia, Inventario Epp, Sistema de Logística, Propuestas de Negocio, Asignaciones de personal) en PowerApps.',
     tags: ['PowerApps', 'Power Automate', 'SharePoint', 'Microsoft 365'],
     github: null,
     demo: null,
