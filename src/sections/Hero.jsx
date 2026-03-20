@@ -9,7 +9,7 @@ export default function Hero() {
       <div className={styles.left}>
         <div className={`${styles.eyebrow} fade-up`}>
           <div className={styles.line} />
-          <span>Portafolio profesional · 2025</span>
+          <span>Portafolio · 2026</span>
         </div>
 
         <h1 className={`${styles.name} fade-up delay-1`}>
