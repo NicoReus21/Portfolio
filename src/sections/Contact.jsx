@@ -1,4 +1,4 @@
-import { personal } from '../data/Portfolio'
+import { personal } from '../data/Portfolio.js'
 import styles from './Contact.module.css'
 
 const cards = [

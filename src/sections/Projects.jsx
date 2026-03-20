@@ -1,4 +1,4 @@
-import { projects } from '../data/Portfolio'
+import { projects } from '../data/Portfolio.js'
 import styles from './Projects.module.css'
 
 export default function Projects() {

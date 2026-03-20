@@ -1,4 +1,4 @@
-import { skills } from '../data/Portfolio'
+import { skills } from '../data/Portfolio.js'
 import styles from './Skills.module.css'
 
 export default function Skills() {

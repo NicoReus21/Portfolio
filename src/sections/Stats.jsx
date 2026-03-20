@@ -1,4 +1,4 @@
-import { stats } from '../data/Portfolio'
+import { stats } from '../data/Portfolio.js'
 import styles from './Stats.module.css'
 
 export default function Stats() {
