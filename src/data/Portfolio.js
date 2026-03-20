@@ -6,6 +6,8 @@ export const personal = {
   email: 'nicolas.ahumada0605@gmail.com',
   phone: '+56 9 5906 8792',
   github: 'https://github.com/NicoReus21',
+  linkedin: 'https://www.linkedin.com/in/nicolascarmona21',
+  linkedinHandle: 'linkedin.com/in/nicolascarmona21',
   githubHandle: 'github.com/NicoReus21',
   available: true,
   bio: [

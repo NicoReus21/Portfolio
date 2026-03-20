@@ -2,16 +2,17 @@ import { personal } from '../data/Portfolio.js'
 import styles from './Contact.module.css'
 
 const cards = [
-  { icon: '✉️', label: 'Email', value: 'nicolas.ahumada0605@gmail.com', href: `mailto:${personal.email}` },
-  { icon: '📞', label: 'Teléfono', value: '+56 9 5906 8792', href: `tel:${personal.phone}` },
-  { icon: '💼', label: 'GitHub', value: 'github.com/NicoReus21', href: personal.github },
+  { icon: '✉️', label: 'Email', value: personal.email, href: `mailto:${personal.email}` },
+  { icon: '📞', label: 'Teléfono', value: personal.phone, href: `tel:${personal.phone}` },
+  { icon: '💼', label: 'LinkedIn', value: personal.linkedinHandle, href: personal.linkedin },
+  { icon: '👤', label: 'GitHub', value: personal.githubHandle, href: personal.github },
 ]
 
 export default function Contact() {
   return (
     <section className={styles.contact} id="contact">
-      <div className={styles.sectionLabel}>Contacto</div>
-      <h2 className={styles.sectionTitle}>Trabajemos juntos</h2>
+      <div className={styles.sectionLabel}>// Contacto</div>
+      <h2 className={`${styles.sectionTitle} ${styles.title}`}>Trabajemos juntos</h2>
       <div className={styles.titleAccent} />
       <p className={styles.desc}>
         Estoy disponible para nuevas oportunidades laborales, proyectos freelance
@@ -29,7 +30,8 @@ export default function Contact() {
       </div>
       <div className={styles.ctas}>
         <a href={`mailto:${personal.email}`} className="btn-warm">Enviar mensaje</a>
-        <a href={personal.github} target="_blank" rel="noreferrer" className={`btn-ghost ${styles.ghostLight}`}>Ver GitHub ↗</a>
+        <a href={personal.linkedin} target="_blank" rel="noreferrer"
+          className={`btn-ghost ${styles.ghostLight}`}>LinkedIn ↗</a>
       </div>
     </section>
   )
