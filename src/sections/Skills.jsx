@@ -4,7 +4,7 @@ import styles from './Skills.module.css'
 export default function Skills() {
   return (
     <section className="section" id="skills">
-      <div className={styles.sectionLabel}>// Stack tecnológico</div>
+      <div className={styles.sectionLabel}>Stack tecnológico</div>
       <h2 className={styles.sectionTitle}>Habilidades</h2>
       <div className={styles.titleAccent} />
       <div className={styles.grid}>

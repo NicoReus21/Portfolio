@@ -103,7 +103,7 @@ export const projects = [
     name: 'ERP Bomberos Antofagasta',
     description: 'Módulos de Gestión de Activos y Bomberos Lesionados para el ERP institucional. Arquitectura MVC con API RESTful, frontend en Angular y backend en Laravel.',
     tags: ['Laravel', 'Angular', 'Material Design', 'REST API', 'MySQL'],
-    github: null,
+    github: 'https://sigba.itmanagement.cl/login',
     demo: null,
   },
   {
