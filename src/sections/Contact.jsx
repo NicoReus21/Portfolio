@@ -11,7 +11,7 @@ const cards = [
 export default function Contact() {
   return (
     <section className={styles.contact} id="contact">
-      <div className={styles.sectionLabel}>// Contacto</div>
+      <div className={styles.sectionLabel}>Contacto</div>
       <h2 className={`${styles.sectionTitle} ${styles.title}`}>Trabajemos juntos</h2>
       <div className={styles.titleAccent} />
       <p className={styles.desc}>
